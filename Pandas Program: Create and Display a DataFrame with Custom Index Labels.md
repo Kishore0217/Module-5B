@@ -1,12 +1,12 @@
 # Pandas Program: Create and Display a DataFrame with Custom Index Labels
 
-## 🎯 Aim
+## Aim
 
 To create and display a **DataFrame** using the **Pandas** library in Python from a given dictionary, and apply specific index labels to the rows.
 
 ---
 
-## 🧠 Algorithm
+## Algorithm
 
 1. **Import Libraries**: Import the required libraries – `pandas` and `numpy`.
 2. **Create Dictionary**: Define a dictionary `exam_data` with keys: `'name'`, `'score'`, `'attempts'`, and `'qualify'`.
@@ -16,9 +16,19 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 
 ---
 
-## 💻 Program
-Add code here
+## Program
+```
+import numpy as np
+import pandas as pd
+exam_data=eval(input())
+lab=np.array(eval(input()))
+df=pd.DataFrame(exam_data,index=lab)
+print(df)
 
+```
 ## Output
+<img width="1172" height="422" alt="image" src="https://github.com/user-attachments/assets/b8c734a0-120d-4722-a325-fa80ebadc3e7" />
 
 ## Result
+Thus, the program to create and display a Pandas DataFrame with custom index labels was
+executed successfully
